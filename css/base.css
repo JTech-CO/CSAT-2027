@@ -1,0 +1,40 @@
+/* Light Theme Styles */
+:root {
+    --primary-text: #111111;
+    --secondary-text: #444444;
+    --border-color: #bbbbbb;
+    --border-dark: #222222;
+    --bg-body: #f4f5f7;
+    --bg-card: #ffffff;
+    --bg-hover: #eeeeee;
+    --bg-input: #ffffff;
+    --btn-main: #2b3a4a;
+    --btn-sub: #5c6b79;
+    --btn-sub-bg: #f8f9fb;
+}
+
+/* Dark Theme Styles */
+body.dark-mode {
+    --primary-text: #f0f0f0;
+    --secondary-text: #aaaaaa;
+    --border-color: #444444;
+    --border-dark: #777777;
+    --bg-body: #121212;
+    --bg-card: #1e1e1e;
+    --bg-hover: #2a2a2a;
+    --bg-input: #1e1e1e;
+    --btn-main: #8ab4f8; /* 어두운 배경에 맞는 밝은 파랑 */
+    --btn-sub: #9aa5b1;
+    --btn-sub-bg: #2a2a2a;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: var(--bg-body);
+    color: var(--primary-text);
+    line-height: 1.6;
+    padding: 40px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
